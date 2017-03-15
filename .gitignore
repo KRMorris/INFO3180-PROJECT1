@@ -4,6 +4,7 @@ Thumbs.db
 
 *.py[cod]
 *$py.class
+*.pyc
 
 # virtualenv
 .venv/
