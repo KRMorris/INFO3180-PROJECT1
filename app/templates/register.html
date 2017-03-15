@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "_formhelpers.html" import render_field %}
+{%block main%}
+<div>
+<form action="{{ url_for('register') }}" method="post" enctype="multipart/form-data">
+  
+    {{ render_field(form.firstname) }}
+    {{ render_field(form.lastname) }}
+    {{ render_field(form.username) }}
+    {{render_field(form.gender)}}
+    {{render_field(form.age)}}
+    {{ render_field(form.bio) }}
+    {{ render_field(form.password) }}
+    {{ render_field(form.confirm) }}
+    <input type="file" name="file">
+    
+    <input type=submit value=Register>
+</form>
+
+</div>
+{%endblock%}

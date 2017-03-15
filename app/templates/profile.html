@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title%} Profile {% endblock%}
+{% block head%}
+   {{ super()}}
+   <style type="text/css">
+       .impotant{color: #336699;}
+ 
+        
+   </style>
+  {% endblock %}
+
+
+  {% block main%}
+  <div class="row">
+<div class="col-md-6">
+	<img src="/static/img/test.jpg">
+</div>
+<div class="col-md-6"> 
+
+	{#{profile.username}#} <br>
+	Profile Created On:{#{profile.created}#} <br><br>
+
+	Username:{#{profile.username}#} <br>
+	User ID: <br>
+	Gender: <br>
+	Age: <br><br>
+
+	{{profile.bio}}
+
+	</div>
+	</div>
+{% endblock %}
+
